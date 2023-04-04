@@ -1,6 +1,24 @@
 # quickstartbackend
 This contains all context required to quickly start backend with mongo ,mongoose,express 
 
+How to start a server
+1. Install express - npm i express 
+2. Require express in project -> create app.js file and use below code
+   const express=require("express")
+   const app=express()
+3. You need a port number on which request can be processed 
+   const port =3005;
+4. Now we can listen on app with declared port number
+   app.listen(port, () => {
+   console.log("Server is running on port :", port);
+   });
+   
+   now we run app.js file with node app.js and this will start our server; 
+
+How to create simple get api with sample data
+
+.....................................................................
+
 Data modelling 
 1. Different type of relation between data
 2. Refrencing/normalization vs embedding/denormalization
